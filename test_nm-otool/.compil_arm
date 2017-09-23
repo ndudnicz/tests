@@ -1,1 +1,0 @@
-gcc -arch armv7 main.c -isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk"
