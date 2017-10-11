@@ -1,10 +1,4 @@
 #!/bin/sh
-if [ -z "$2" ]
-then
-  ./ft_nm $1 > 1 ; nm $1 > 2 ;
-else
-  ./ft_nm $1 $2 > 1 ; nm $1 $2 > 2 ;
-fi
-echo $1
-echo $2
+./ft_nm /usr/bin/* /bin/* /usr/lib/*.dylib > 1 ;
+nm /usr/bin/* /bin/* /usr/lib/*.dylib > 2 ;
 diff 1 2
